@@ -1,0 +1,2 @@
+本案例是用springboot去整合jdbcTemplate
+需要去学习下自动配置，为什么application.properties中配置了数据库的信息后，就可以使用JdbcTemplate了。

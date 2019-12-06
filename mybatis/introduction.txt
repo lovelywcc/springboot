@@ -1,0 +1,5 @@
+本案例是用springboot去整合Mybatis
+1.在每个dao接口上去使用@Mapper注解，或者在启动类上使用@MapperScan(),配置要扫描的包路径，此时不用再在dao接口上去使用
+@Repostory注解，也已经注入，写上注解，则引用此mapper实现类时，idea就完全不会报错。
+2.有注解和xml2种方式，本案例都有用到，在使用xxxMapper.xml时，需要在配置文件中指明xml文件的位置，
+例如使用mybatis.mapper-locations=classpath:mapper/*.xml
