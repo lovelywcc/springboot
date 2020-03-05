@@ -25,7 +25,7 @@ public class FileUploadController {
      */
     @RequestMapping("file")
     public String file(){
-        return "/file";
+        return "/type";
     }
 
     /**
@@ -133,7 +133,7 @@ public class FileUploadController {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
-            System.out.println("----------file download" + fileName);
+            System.out.println("----------type download" + fileName);
             try {
                 bis.close();
                 fis.close();

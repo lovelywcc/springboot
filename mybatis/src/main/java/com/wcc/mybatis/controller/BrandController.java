@@ -23,10 +23,5 @@ public class BrandController {
         List<TbBrand> tbBrands = userDao.findAll();
         return tbBrands;
     }
-    @GetMapping (value = "brandOne")
-    public TbBrand findBrandByName(@RequestParam("brandName") String name){
-        TbBrand brand = userDao.queryBrandByName(name);
-        return brand;
-    }
 }
 
